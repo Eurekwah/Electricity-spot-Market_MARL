@@ -1,7 +1,7 @@
 '''
 Date: 2020-10-08 19:29:58
 LastEditors: Yuchen ZHANG
-LastEditTime: 2020-10-08 21:03:08
+LastEditTime: 2020-10-12 00:48:16
 FilePath: /project/SpotMarket/deal_market.py
 '''
 import torch
@@ -9,7 +9,7 @@ import torch.nn as nn
 import numpy as np
 import random
 import pandas as pd
-import MarketSimulator as ms
+import simulator_one_step as ms
 import matplotlib.pyplot as plt
 from time import sleep
 
@@ -39,7 +39,7 @@ plt.ion()
 fig = plt.figure(1)
 plt.style.use("dark_background") # 设置使用的样式
 plt.xlim(0,23)
-plt.ylim(9.5, 13)
+plt.ylim(11, 13)
 plt.pause(5)
 for i in a:
     print_time(i[0])
